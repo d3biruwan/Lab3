@@ -14,3 +14,6 @@ def dichotomy_iteration(a, b, func):
     else:
         return x1, b
 
+
+def dichotomy_func_calls(iter):
+    return 2 * iter

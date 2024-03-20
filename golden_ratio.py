@@ -42,3 +42,7 @@ def golden_ratio_iteration(a, b, func):
     else:
         right_inner = a + (1 - golden_ratio) * (b - a)
         return sub_iteration(a, b, func, f_left=last_func_value)
+
+
+def golden_ratio_func_calls(iter):
+    return 2 + iter - 1
