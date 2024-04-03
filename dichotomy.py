@@ -5,8 +5,8 @@ def delta_calc(a, b):
     return delta_coef * (b - a)
 
 
-def dichotomy_iteration(a, b, func):
-    delta = delta_calc(a, b)
+def dichotomy_iteration(a, b, func, delta=0):
+    # delta = delta_calc(a, b)
     x1 = (b + a) / 2 - delta
     x2 = (b + a) / 2 + delta
     if func(x1) < func(x2):
