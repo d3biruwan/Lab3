@@ -6,6 +6,11 @@ left_inner = 0
 right_inner = 0
 last_func_value = 0
 
+def clear_vars():
+    global left_inner
+    global right_inner
+    global last_func_value
+    left_inner, right_inner, last_func_value = 0, 0, 0
 
 def sub_iteration(a, b, func, f_left=None, f_right=None):
     global left_inner
@@ -29,7 +34,7 @@ def sub_iteration(a, b, func, f_left=None, f_right=None):
         return new_a, b
 
 
-def golden_ratio_iteration(a, b, func):
+def golden_ratio_iteration(a, b, func, delta=0):
     global left_inner
     global right_inner
     if left_inner == right_inner:
